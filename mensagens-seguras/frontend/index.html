@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagens Seguras</title>
+</head>
+<body>
+    <h1>Enviar Mensagem</h1>
+    <form id="messageForm" method="POST" action="/mensagens">
+        <input type="text" name="conteudo" placeholder="Digite sua mensagem" required>
+        <input type="hidden" name="_csrf" value="PLACEHOLDER_TOKEN">
+        <button type="submit">Enviar</button>
+    </form>
+    <h2>Mensagens Recebidas</h2>
+    <div id="mensagensRecebidas">
+        <!-- Listagem via JS futura -->
+    </div>
+</body>
+</html>
